@@ -1,0 +1,30 @@
+<h1>Create A Listing</h1>
+
+<div class="container-fluid">
+  Hello world
+
+  <%= form_for @listing, html: { multipart: true } do |f| %>
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+
+    <%= f.label :title %>
+    <%= f.text_field :title, class: 'form-control' %>
+
+    <%= f.label :price %>
+    <%= f.text_field :price, class: 'form-control' %>
+
+    <%= f.label :location %>
+    <%= f.text_field :location, class: 'form-control' %>
+
+    <%= f.label :zipcode %>
+    <%= f.text_field :zipcode, class: 'form-control' %>
+
+    <%= f.label :body %>
+    <%= f.text_field :body, class: 'form-control' %>
+
+    <%= f.label :contact %>
+    <%= f.text_field :contact, class: 'form-control' %>
+
+    <%= f.submit "Create Listing", class: 'btn btn-primary' %>
+  <% end %>
+</div>

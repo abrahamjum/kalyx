@@ -1,0 +1,13 @@
+
+<div>
+  <h1><%= @listing.title %></h1>
+  <p>Price: <%= @listing.price %></p>
+  <p>Location: <%= @listing.location %></p>
+  <p>Zip Code: <%= @listing.zipcode %></p>
+  <div>Description: <%= @listing.body %></div>
+  <p>Contact: <%= @listing.contact %></p>
+</div>
+
+<div>
+   <%= image_tag @listing.image.url %>
+</div>

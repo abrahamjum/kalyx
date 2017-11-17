@@ -1,0 +1,29 @@
+
+
+<!-- <div class="container">
+  <div class="row">
+    <% @weeds.each do |t| %>
+    <div class="card">
+      <img class="card-img-top" src="https://cbsnews1.cbsistatic.com/hub/i/2010/10/14/f0c92b5a-a642-11e2-a3f0-029118418759/Marijuana-leaf.jpg" />
+      <div class="card-block">
+        <h4 class="card-title"><%= t.name %></h4>
+        <p class="card-price"><%= t.price %></p>
+        <%= link_to "View", products_path(1), class: "btn btn-lg btn-primary" %>
+        <a href="#" class="btn btn-primary">View</a>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div> -->
+
+
+
+<div class="row">
+  <% @weeds.each do |t| %>
+    <div class="col-4">
+      <%= t.name %>
+      <%= t.species %>
+      <%= t.price %>
+    </div>
+  <% end %>
+</div>

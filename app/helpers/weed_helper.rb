@@ -1,0 +1,3 @@
+module WeedHelper
+
+end

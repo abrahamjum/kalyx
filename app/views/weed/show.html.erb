@@ -1,0 +1,12 @@
+<div class="row">
+  <aside class="col-md-4">
+    <section class="weed_info">
+      <h1>
+        <%= @weed.name %> <br />
+        <%= @weed.species %> <br />
+        <p>Price: <%= @weed.price %></p>
+<%= link_to @weed, products_path(:id) %>
+      </h1>
+    </section>
+  </aside>
+</div>

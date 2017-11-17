@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weedmazon</title>
+    <%= render 'layouts/head' %>
+    <%= render 'layouts/shim' %>
+  </head>
+<body id="body">
+  <%= render 'layouts/header' %>
+  <div class="container">
+    <%= yield %>
+    <%= render 'layouts/footer' %>
+  </div>
+</body>
+</html>

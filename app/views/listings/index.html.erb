@@ -1,0 +1,16 @@
+<div class="row">
+
+  <% @listings.each do |t| %>
+    <div>
+      <h1><%= t.title %></h1>
+      <p>Price: <%= t.price %></p>
+      <p>Location: <%= t.location %></p>
+      <p>Zip Code: <%= t.zipcode %></p>
+      <div>Description: <%= t.body %></div>
+      <p>Contact: <%= t.contact %></p>
+    </div>
+  <% end %>
+
+  <%= will_paginate @listings, :renderer => BootstrapPagination::Rails,
+  next_label:"Newer", previous_label:"Older" , inner_window: 1, outer_window: 0 %>
+</div>

@@ -1,0 +1,25 @@
+<header class="header navbar navbar-fixed-top">
+  <div class="container-fluid">
+    <img id="logo" src="assets/kalyxlogo.png" />
+    <div class="search-form">
+        <%= form_tag(products_path, :method => "get", id: "search-form") do %>
+          <%= text_field_tag :search, params[:search], placeholder: "Search for..." %>
+          <%= submit_tag "Search", :name => nil %>
+        <% end %>
+
+        <!-- <% if @weeds.blank? %>
+          <h4>There are no products containing <%= params[:search] %>.</h4>
+        <% end %> -->
+    </div>
+    <nav>
+      <ul class="d-flex flex-row nav navbar-nav navbar-right">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Products", products_path %></li>
+        <li><%= link_to "Login", login_path %></li>
+        <li><%= link_to "Signup", signup_path %></li>
+        <li><%= link_to "Add Listing", listing_add_path %></li>
+        <li><%= link_to "View Listings", listings_path %></li>
+      </ul>
+    </nav>
+  </div>
+</header>
