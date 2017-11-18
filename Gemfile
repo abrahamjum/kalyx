@@ -5,7 +5,6 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'devise', '~> 4.3'
 gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
 gem 'will_paginate', '~> 3.1', '>= 3.1.6'
 gem 'kaminari', '~> 1.1', '>= 1.1.1'

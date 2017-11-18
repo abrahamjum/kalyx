@@ -91,6 +91,12 @@ body {
 #body {
 	background-color: #e6f4d4;
 }
+
+.table-responsive {
+	color: #ff7954;
+	cursor: pointer;
+}
+
 /* SEARCH FORM */
 
 .search-form {
@@ -98,26 +104,18 @@ body {
   align-content: center;
 }
 
-.cards {
-  display: flex;
-  flex-direction: row;
+.box {
+	width: 300px;
+	height: 300px;
+	color: #B19CD9;
+	margin: 0 30px 70px 30px;
 }
 
-.card-img-top {
-  width: 100%;
-  height: 60%;
-}
-
-.card-block {
-  text-align: center;
-  vertical-align: middle;
-}
-
-.card {
-  width: 100%;
-  height: 200px;
-  border: 1px solid red;
-}
+#map {
+   width: 50%;
+   height: 400px;
+   background-color: grey;
+ }
 
 /* Species */
 

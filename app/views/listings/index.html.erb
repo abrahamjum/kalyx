@@ -1,16 +1,41 @@
-<div class="row">
 
-  <% @listings.each do |t| %>
-    <div>
-      <h1><%= t.title %></h1>
-      <p>Price: <%= t.price %></p>
-      <p>Location: <%= t.location %></p>
-      <p>Zip Code: <%= t.zipcode %></p>
-      <div>Description: <%= t.body %></div>
-      <p>Contact: <%= t.contact %></p>
-    </div>
-  <% end %>
-
-  <%= will_paginate @listings, :renderer => BootstrapPagination::Rails,
-  next_label:"Newer", previous_label:"Older" , inner_window: 1, outer_window: 0 %>
+<div class="table-responsive">
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Price</th>
+        <th>City</th>
+        <th>Description</th>
+        <th>Posted</th>
+      </tr>
+    </thead>
+  </table>
 </div>
+<% @listings.each do |t| %>
+<div class="table-responsive">
+<table class="table table-hover table-striped">
+<tbody>
+      <td>
+        <%= link_to t.title, "/listing/#{t.id}" %>
+      </td>
+      <td>
+        Price: <%= t.price %>
+      </td>
+      <td>
+        City: <%= t.location %>
+      </td>
+      <td>
+        Description: <br />
+        <%= t.body %>
+      </td>
+      <td>
+        <%= time_ago_in_words(Time.now) %>
+      </td>
+</tbody>
+  </table>
+</div>
+<% end %>
+
+<%= will_paginate @listings, :renderer => BootstrapPagination::Rails,
+next_label:"Older", previous_label:"Newer" , inner_window: 1, outer_window: 0 %>

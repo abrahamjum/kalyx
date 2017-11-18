@@ -5,6 +5,7 @@ Rails.application.routes.draw do
 
   root 'weed#home'
   get '/products' => 'weed#index'
+  get 'products/:id' => 'weed#show'
   get '/signup' => 'users#new'
   get '/login' => 'sessions#new'
   post '/login' => 'sessions#create'
