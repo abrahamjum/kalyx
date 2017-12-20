@@ -1,0 +1,23 @@
+<h1>Add A Strain</h1>
+
+<div class="container-fluid">
+
+  <%= form_for @weed do |f| %>
+    <%= f.label :image %>
+    <%= f.file_field :image %>
+
+    <%= f.label :name %>
+    <%= f.text_field :name, class: 'form-control' %>
+
+    <%= f.label :strain %>
+    <%= f.text_field :strain, class: 'form-control' %>
+
+    <%= f.label :price %>
+    <%= f.number_field :price, class: 'form-control' %>
+
+    <%= f.label :species %>
+    <%= f.text_field :species, class: 'form-control' %>
+
+    <%= f.submit "Add Strain", class: 'btn btn-primary' %>
+  <% end %>
+</div>

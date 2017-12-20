@@ -4,6 +4,8 @@ Rails.application.routes.draw do
   get 'sessions/destroy'
 
   root 'weed#home'
+  get '/products/new' => 'weed#new'
+  post '/products' => 'weed#create'
   get '/products' => 'weed#index'
   get 'products/:id' => 'weed#show'
   get '/signup' => 'users#new'
@@ -18,4 +20,5 @@ Rails.application.routes.draw do
   get '/listing/:id' => 'listings#show'
   resources :users
   resources :listings
+  resources :weeds
 end

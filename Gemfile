@@ -5,12 +5,10 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-gem 'will_paginate-bootstrap', '~> 1.0', '>= 1.0.1'
-gem 'will_paginate', '~> 3.1', '>= 3.1.6'
+
 gem 'kaminari', '~> 1.1', '>= 1.1.1'
 gem 'paperclip', '~> 5.1'
 gem 'jquery-rails'
-gem 'bootstrap-sass', '~> 3.3', '>= 3.3.7'
 gem 'hirb'
 gem 'rails', '~> 5.1.4'
 gem 'pg', '~> 0.18'
@@ -21,6 +19,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'bcrypt', '~> 3.1.7'
+gem 'materialize-sass'
+
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]

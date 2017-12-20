@@ -1,5 +1,4 @@
-@import 'bootstrap-sprockets';
-@import 'bootstrap';
+@import 'materialize';
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -52,20 +51,19 @@ table {
 
 
 ul.nav li a, ul.nav li a:visited {
-    color: #FF9375 !important;
+    // color: #FF9375 !important;
 }
 
 ul.nav li a:hover, ul.nav li a:active {
-    color: #FF9375 !important;
+    // color: #FF9375 !important;
 }
 
 ul.nav li.active a {
-    color: #FF9375 !important;
+    // color: #FF9375 !important;
 }
 
 body {
-  color: #FF9375;
-	background-color: #bae182;
+
 }
 
 .logo {
@@ -84,16 +82,12 @@ body {
   width: 200px;
 }
 
-.navbar {
-	color: #bae182;
-}
-
 #body {
-	background-color: #e6f4d4;
+
 }
 
 .table-responsive {
-	color: #ff7954;
+
 	cursor: pointer;
 }
 
@@ -119,17 +113,7 @@ body {
 
 /* Species */
 
-.indica {
-	color: #9CD9CE;
-}
 
-.sativa {
-	color: #FFDEE4;
-}
-
-.hybrid {
-	color: #B19CD9;
-}
 
 /* JUMBOTRON */
 
@@ -142,9 +126,6 @@ body {
 
 /* HEADER */
 
-.header {
-  position: relative;
-}
 
 
 /* FOOTER */
@@ -152,16 +133,16 @@ body {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid #FF9375;
-  color: #FF9375;
+
+
 }
 
 footer a {
-  color: #FF9375;
+
 }
 
 footer a:hover {
-  color: #FF9375;
+
 }
 
 footer ul {
